@@ -117,7 +117,7 @@ if [[ "$CONFIG_BASHRC" = [yY] ]];
 then
 	cp /root/.bashrc /root/.bashrc.backup
 	cat >> /root/.bashrc <<EOF
-PS1="\A [\[$(tput sgr0)\]\[\033[38;5;11m\]\H\[$(tput sgr0)\]\[\033[38;5;15m\] \W]\\$ \[$(tput sgr0)\]"
+PS1="\[\033[38;5;7m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] [\[$(tput sgr0)\]\[\033[38;5;11m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \W]\\$ \[$(tput sgr0)\]"
 EOF
 	fi
 
